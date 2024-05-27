@@ -5,6 +5,7 @@ import { StatusBar } from 'expo-status-bar'
 import { COLORS, SIZES } from "../constants";
 import {AntDesign, MaterialCommunityIcons, SimpleLineIcons, Ionicons} from '@expo/vector-icons'
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import axios from 'axios';
 
 
 const Profile = ({navigation}) => {
@@ -73,17 +74,34 @@ const Profile = ({navigation}) => {
     )
   }
 
+  const confirmDeleteAccount = async () => {
+    const id = await AsyncStorage.getItem('id');
+    const userId = JSON.parse(id);
+
+    try {
+      const response = await axios.delete(`http://192.168.43.218:8081/api/user/${userId}`);
+
+      if (response.status === 200) {
+        await AsyncStorage.multiRemove([`user${userId}`, 'id']);
+        navigation.replace('Login');
+      } else {
+        console.log('Error deleting the account: ', response.status);
+      }
+    } catch (error) {
+      console.log('Error deleting the account: ', error);
+    }
+  };
+
   const deleteAccount = ()=>{
     Alert.alert(
       "Delete Account", 
       "Are you sure you want to delete this account",
       [
         {text: "Cancel", onPress: ()=> console.log("cancel delete")},
-        {text: "Continue", onPress: ()=> console.log("delete account")},
+        {text: "Continue", onPress: ()=> confirmDeleteAccount()},
       ]
     )
   }
-
 
   return (
     <View style={styles.container}>
