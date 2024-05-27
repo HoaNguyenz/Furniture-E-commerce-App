@@ -26,5 +26,5 @@ app.use('/api/user', userRouter)
 app.use('/api/cart', cartRouter)
 app.use('/api/order', orderRouter)
 
-app.listen(process.env.PORT || port, () => console.log(`Example app listening on port ${process.env.PORT}!`))
+app.listen(process.env.PORT || port, () => console.log(`App is listening on port ${process.env.PORT}!`))
 
