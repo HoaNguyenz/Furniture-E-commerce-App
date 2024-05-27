@@ -1,26 +1,26 @@
 Some features of the app:
 
-Home page:
-<img src="client/assets/images/home.jpg" width="300" height="600">
+<h1>Home Page</h1>
+.<img src="client/assets/images/home.jpg" width="300" height="600">
 
-![NewRivals](client/assets/images/newrival.jpg)
+.<img src="client/assets/images/newrival.jpg" width="300" height="600">
 
-![Product1](client/assets/images/sofa.jpg)
+.<img src="client/assets/images/sofa.jpg" width="300" height="600">
 
-![Product2](client/assets/images/desk.jpg)
+.<img src="client/assets/images/desk.jpg" width="300" height="600">
 
 Search page:
-![Search](client/assets/images/searchpage.jpg)
+.<img src="client/assets/images/searchpage.jpg" width="300" height="600">
 
-![Search2](client/assets/images/search.jpg)
+.<img src="client/assets/images/search.jpg" width="300" height="600">
 
 User page:
-![User](client/assets/images/login.jpg)
+.<img src="client/assets/images/login.jpg" width="300" height="600">
 
-![User](client/assets/images/loggedin.jpg)
+.<img src="client/assets/images/loggedin.jpg" width="300" height="600">
 
 Login:
-![User](client/assets/images/logging.jpg)
+.<img src="client/assets/images/logging.jpg" width="300" height="600">
 
-Signin:
-![User](client/assets/images/signin.jpg)
+Signup:
+.<img src="client/assets/images/signin.jpg" width="300" height="600">
