@@ -1,7 +1,7 @@
 Some features of the app:
 
 Home page:
-<img src="client/assets/images/home.jpg" width="10vw" height="20vh">
+<img src="client/assets/images/home.jpg" width="300" height="700">
 
 ![NewRivals](client/assets/images/newrival.jpg)
 
