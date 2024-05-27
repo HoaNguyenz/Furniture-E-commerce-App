@@ -14,7 +14,7 @@
 
 
 <h2>Search page:</h2>
-<div display="flex-box">
+<div display="flex-box" gap="10px">
 <img src="client/assets/images/searchpage.jpg" width="300" height="600">
 
 <img src="client/assets/images/search.jpg" width="300" height="600">
