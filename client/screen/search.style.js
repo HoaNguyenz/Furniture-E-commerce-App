@@ -3,7 +3,6 @@ import { COLORS, SIZES } from "../constants";
 
 const styles = StyleSheet.create({
     searchContainer: {
-        top: 20,
         flexDirection: 'row',
         justifyContent: 'center',
         alignContent: 'center',

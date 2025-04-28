@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js SET HOST=192.168.43.218 react-scripts start"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",

@@ -79,7 +79,7 @@ const Profile = ({navigation}) => {
     const userId = JSON.parse(id);
 
     try {
-      const response = await axios.delete(`http://192.168.43.218:8081/api/user/${userId}`);
+      const response = await axios.delete(`http://192.168.100.7:3000/api/user/${userId}`);
 
       if (response.status === 200) {
         await AsyncStorage.multiRemove([`user${userId}`, 'id']);

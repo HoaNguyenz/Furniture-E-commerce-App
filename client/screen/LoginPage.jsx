@@ -39,7 +39,7 @@ const LoginPage = ({navigation}) => {
   const login = async(values)=>{
     setLoader(true);
     try {
-      const endpoint = "http://192.168.43.218:8081/api/login"
+      const endpoint = "http://192.168.100.7:3000/api/login"
       const data = values
 
       const response = await axios.post(endpoint, data)
@@ -169,10 +169,6 @@ const LoginPage = ({navigation}) => {
             )}
           </Formik>
 
-
-
-
-          
         </View>
       </SafeAreaView>
     </ScrollView>

@@ -41,7 +41,7 @@ const SignUp = ({navigation}) => {
       setLoader(true);
 
       try {
-        const endpoint = 'http://192.168.43.218:8081/api/register'
+        const endpoint = 'http://localhost:3000/api/register'
         const data = values
 
         const response = await axios.post(endpoint, data)

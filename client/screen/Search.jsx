@@ -1,4 +1,5 @@
-import { Text, TextInput, TouchableOpacity, View, SafeAreaView, FlatList, Image } from 'react-native'
+import { Text, TextInput, TouchableOpacity, View, FlatList, Image } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
 import React, {useState} from 'react'
 import { COLORS, SIZES } from '../constants'
 import { Feather, Ionicons } from '@expo/vector-icons'
@@ -15,16 +16,16 @@ const Search = () => {
 
   const handleSearch = async ()=>{
     try {
-      const response =  await axios.get(`http://192.168.43.218:8081/api/products/search/${searchKey}`);
+      const response =  await axios.get(`http://192.168.100.7:3000/api/products/search/${searchKey}`);
       setSearchResult(response.data)
     } catch (error) {
       console.log("Failed to get product", error)
     }
-  }
-
+  } 
 
   return (
     <SafeAreaView>
+
       <View style={styles.searchContainer}>
             <TouchableOpacity>
                 <Ionicons name='camera-outline' size={SIZES.xLarge} style={styles.searchIcon}>
